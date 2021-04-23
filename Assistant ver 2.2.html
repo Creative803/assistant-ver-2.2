@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Assistant very 2.2</title>
+</head>
+<body style="background: #565956">
+  <h1 id="heading">SUPRASSISTANT</h1>
+  <input id="searchbar" placeholder="Search here">
+  <button id="searchbutton" onclick="search()">Search</button>
+  
+</body>
+<style>
+  #searchbar  {
+    height: 8%;
+    width: 50%;
+    font-size: 155%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    border-radius: 10px;
+  }
+  #searchbutton  {
+    height: 8%;
+    width: 10%;
+    font-size: 150%;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    border: 0;
+    border-radius: 10px;
+  }
+  #heading  {
+    text-align: center;
+    color: #3694cf;
+  }
+</style>
+<script>
+  alert(new Date().getTime())
+  function search()  {
+  var val = document.getElementById("searchbar").value;
+  alert(val)
+    if (val.toLowerCase().includes("covid"))  {
+      alert("covid is a virus!")
+    }
+    if (val.toLowerCase().includes("youtube"))  {
+      window.open("https://youtube.com");
+    }
+    if (val.toLowerCase().includes("google"))  {
+      window.open("https://Google.com")
+    }
+  }
+</script>
+</html>
